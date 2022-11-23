@@ -1,20 +1,23 @@
+// *****
+// ****
+// ***
+// **
+// *
+
 #include<iostream>
 using namespace std;
 
-int main() {
-    int n = 10;
-    //cin >> n;
-    int i = 1;
-    while(i <= n) {
+int main () {
 
-        int j = 1;
-        while(j <= n - i + 1) {
-            cout << "*";
-            j = j + 1;
+    int count = 5;
+
+    for (int i = 0; i < count; i++)
+    {
+        for (int j = count-i; j < count; j++)
+        {
+            cout <<"* ";
         }
-        
-        cout << endl;
-        i = i + 1;
+        cout <<endl;
     }
-    return 0;
+    
 }
