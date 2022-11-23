@@ -1,33 +1,19 @@
-#include<iostream>
-using namespace std;
-
-int main()
-{
-    
-    int n;
-    cin >> n;
-
-    int i = 0;
-    while (i < n)
-    {
-        int j = 0;
-        while (j <= i)
-        {
-            cout << "*  ";
-            j = j + 1;
-        }
-        
-        cout <<endl;
-        i = i + 1;
-    }
-    
-
-    return 0;
-}
-
-
 // 4
 // *  
 // *  *  
 // *  *  *  
 // *  *  *  *  
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int n = 4;
+
+    for (int i = 0; i < n; i++) {
+        for (int j = i; j < n; j++) {
+            cout <<"* ";
+        }
+        cout <<endl;
+    }
+}
