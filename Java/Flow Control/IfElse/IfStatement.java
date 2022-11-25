@@ -1,13 +1,20 @@
 class IfStatement {
+
     public static void main(String[] args) {
-  
-      int number = 10;
-  
-      // checks if number is less than 0
-      if (number < 0) {
-        System.out.println("The number is negative.");
-      }
-  
-      System.out.println("Statement outside if block");
+        
+        int num = 100;
+
+        if (num > 0) {
+            System.out.println("Number is positive.");
+        }
+
+        if (num == 0) {
+            System.out.println("Number is Zero."); 
+        }
+
+        if (num < 0) {
+            System.out.println("Number is negative."); 
+        }
+
     }
-  }
+}
