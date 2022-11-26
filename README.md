@@ -1,4 +1,4 @@
-# Following topics are covered in Java and CPP	
+# Following topics are covered in CPP, Java and DSA	
 ## `	 `Introduction
               Hello World 
 
