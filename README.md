@@ -1,5 +1,5 @@
 # Following topics are covered in Java and CPP	
-### `	 `Introduction
+## `	 `Introduction
 `		   `Hello World
 
 `	  	 `Variables
@@ -12,7 +12,7 @@
 
 `	  	 `Expressions & Blocks
 
-### `	 `Flow Control
+## `	 `Flow Control
 `		 `if...else
 
 `		 `switch Statement
@@ -28,9 +28,9 @@
 `		 `continue Statement
 
 
-### `	 `Arrays
+## `	 `Arrays
 `		 `Arrays
 
-### `	 `Theory
+## `	 `Theory
 `		 `Binary search
 `		 `Time Space Complexity
