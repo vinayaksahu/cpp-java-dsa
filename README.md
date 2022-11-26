@@ -1,20 +1,32 @@
-### Java and CPP	
-	#### Introduction
-		##### Hello World
-		##### Variables
-		##### Data Types
-		##### Operators
-		##### Input and Output
-		##### Expressions & Blocks
+Java and CPP	
+# `	 `Introduction
+`		 `Hello World
 
-	#### Flow Control
-		##### if...else
-		##### switch Statement
-		##### for Loop
-		##### for-each Loop
-		##### while Loop
-		##### break Statement
-		##### continue Statement
-		
-	#### Arrays
-		##### Arrays
+`		 `Variables
+
+`		 `Data Types
+
+`		 `Operators
+
+`		 `Input and Output
+
+`		 `Expressions & Blocks
+
+# `	 `Flow Control
+`		 `if...else
+
+`		 `switch Statement
+
+`		 `for Loop
+
+`		 `for-each Loop
+
+`		 `while Loop
+
+`		 `break Statement
+
+`		 `continue Statement
+
+
+# `	 `Arrays
+`		 `Arrays
