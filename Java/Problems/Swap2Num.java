@@ -7,9 +7,14 @@ public class Swap2Num {
         n2 = 5;
 
         //swap using temp
-        temp = n1;
-        n1 = n2;
-        n2 = temp;
+        // temp = n1;
+        // n1 = n2;
+        // n2 = temp;
+
+        //swap without using temp
+        n2 = n1 + n2;
+        n1 = n2 - n1;
+        n2 = n2 - n1;
 
         System.out.println("n1 is " + n1);
         System.out.println("n2 is " + n2);
