@@ -1,7 +1,20 @@
-####  echo "# cpp-java-dsa" >> README.md
-####  git init
-####  git add README.md
-####  git commit -m "first commit"
-####  git branch -M master
-####  git remote add origin git@github.com:vinayaksahu/cpp-java-dsa.git
-####  git push -u origin master
+### Java and CPP	
+	#### Introduction
+		##### Hello World
+		##### Variables
+		##### Data Types
+		##### Operators
+		##### Input and Output
+		##### Expressions & Blocks
+
+	#### Flow Control
+		##### if...else
+		##### switch Statement
+		##### for Loop
+		##### for-each Loop
+		##### while Loop
+		##### break Statement
+		##### continue Statement
+		
+	#### Arrays
+		##### Arrays
