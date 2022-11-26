@@ -8,7 +8,7 @@ int main(void)
     cin >> n;
 
     int i = 2;
-    while (i < n)
+    while (i <= n/2) //The loop terminates at i == n/2 because we cannot find any factor for n beyond the number n/2. So, any iteration beyond n/2 is redundant.
     {
         if (n % i == 0)
         {
