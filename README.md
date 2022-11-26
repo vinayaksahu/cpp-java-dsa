@@ -1,37 +1,37 @@
 # Following topics are covered in Java and CPP	
 ## `	 `Introduction
-`	  	 `Hello World 
+              Hello World 
 
-`	  	 `Variables
+              Variables
 
-                           Data Types
+              Data Types
 
-`	  	 `Operators
+              Operators
  
-`	  	 `Input and Output
+              Input and Output
 
-`	  	 `Expressions & Blocks
+              Expressions & Blocks
 
 ## `	 `Flow Control
-                           if...else
+              if...else
 
-                           switch Statement
+              switch Statement
 
-                           for Loop
+              for Loop
 
-                           for-each Loop
+              for-each Loop
 
-                           while Loop
+              while Loop
 
-                           break Statement
+              break Statement
 
-                           continue Statement
+              continue Statement
 
 
 ## `	 `Arrays
-                           Arrays
+              Arrays
 
 ## `	 `Theory
-                           Binary search
+              Binary search
 
-                           Time Space Complexity
+              Time Space Complexity
