@@ -35,3 +35,52 @@
               Binary search
 
               Time Space Complexity
+
+
+##         Problems
+              "Hello, World!" Program
+
+              Program to Print Number Entered by User
+			  
+			  Program to Add Two Numbers
+			  
+			  Program to Swap Two Numbers
+			  
+			  Program to Check Whether Number is Even or Odd
+			  
+			  Program to Calculate Sum of Natural Numbers
+			  
+			  Program to Check Leap Year
+			  
+			  Program to Find Factorial
+			  
+			  Program to Display Fibonacci Series
+			  
+			  Program to Find GCD
+			  
+			  Program to Find LCM
+			  
+			  Program to Reverse a Number
+			  
+			  Program to Check Armstrong Number
+			  
+			  Programs To Create Pyramid and Pattern
+			  
+			  Program to Make a Simple Calculator to Add, Subtract, Multiply or Divide Using switch...case
+			  
+			  Program to Convert Binary Number to Decimal and vice-versa
+			  
+			  Program to Calculate Average of Numbers Using Arrays
+			  
+			  Program to Find Largest Element of an Array
+			  
+			  Program to Find Reverse of Array Element
+			  
+			  
+			  
+			  
+			  
+			  
+			
+			  
+			  
