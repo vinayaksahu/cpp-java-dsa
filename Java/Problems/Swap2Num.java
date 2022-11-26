@@ -1,7 +1,8 @@
 public class Swap2Num {
     public static void main(String[] args) {
         
-        int n1, n2, temp;
+        int n1, n2; 
+        //int temp;
 
         n1 = 4;
         n2 = 5;
