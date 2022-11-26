@@ -30,3 +30,7 @@
 
 ### `	 `Arrays
 `		 `Arrays
+
+### `	 `Theory
+`		 `Binary search
+`		 `Time Space Complexity
