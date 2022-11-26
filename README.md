@@ -1,5 +1,5 @@
-Java and CPP	
-# `	 `Introduction
+## Java and CPP	
+### `	 `Introduction
 `		 `Hello World
 
 `		 `Variables
@@ -12,7 +12,7 @@ Java and CPP
 
 `		 `Expressions & Blocks
 
-# `	 `Flow Control
+### `	 `Flow Control
 `		 `if...else
 
 `		 `switch Statement
@@ -28,5 +28,5 @@ Java and CPP
 `		 `continue Statement
 
 
-# `	 `Arrays
+### `	 `Arrays
 `		 `Arrays
