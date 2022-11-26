@@ -1,16 +1,16 @@
 ## Java and CPP	
 ### `	 `Introduction
-`		 `Hello World
+`		   `Hello World
 
-`		 `Variables
+`	  	 `Variables
 
-`		 `Data Types
+`		   `Data Types
 
-`		 `Operators
+`	  	 `Operators
+ 
+`	  	 `Input and Output
 
-`		 `Input and Output
-
-`		 `Expressions & Blocks
+`	  	 `Expressions & Blocks
 
 ### `	 `Flow Control
 `		 `if...else
