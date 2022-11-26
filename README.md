@@ -31,13 +31,13 @@
 ##         Arrays
               Arrays
 
-##         Theory
+##         Theory only
               Binary search
 
               Time Space Complexity
 
 
-##         Problems
+##         Problems in CPP and JAVA
               "Hello, World!" Program
 
               Program to Print Number Entered by User
