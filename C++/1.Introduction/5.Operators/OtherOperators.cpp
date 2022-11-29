@@ -9,8 +9,8 @@ int main(int argc, char const *argv[])
     &	        represents memory address of the operand	                  &num; // address of num
     .	        accesses members of struct variables or class objects	      s1.marks = 92;
     ->	        used with pointers to access the class or struct variables	  ptr->marks = 92;
-    <<	        prints the output value	cout << 5;
-    >>	        gets the input value	cin >> num;
+    <<	        prints the output value	                                      cout << 5;
+    >>	        gets the input value	                                      cin >> num;
         
 */
 
