@@ -1,41 +1,52 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-void reverse(int arr[], int n) {
+void reverse (int a[], int n) {
 
     int start = 0;
-    int end = n-1;
+    int end = n - 1;
 
-    while (start <= end)
-    {
-        swap(arr[start], arr[end]);
+    while (start <= end) {
+        swap (a[start], a[end]);
         start++;
         end--;
     }
-
+    
 }
 
-void printArray(int arr[], int n) {
+void printArray (int a[], int size) {
 
-    for (int i = 0; i < n; i++)
-    {
-        cout << arr[i];
+    //values of reverse() will return to this function
+    //print the final array here
+
+    for (int i = 0; i < size; i++) {
+        cout << a[i] <<" ";
     }
 
-    cout <<endl;
-    
-
 }
 
+int main() {
+    
+    int arr[50], i, n;
 
-int main () {
+    //take input from user
+    cout <<"Input array element: "<<endl;
+    cin >>n;
+    for (i = 0; i < n; i++)    {
+        cin >> arr[i];
+    }
 
-    int arr[] = {1, 4 , 0, 5, -2, 15};
+    //print the entered element
+    cout <<"Array: ";
+    for (i = 0; i < n; i++) {
+        cout <<arr[i] <<" ";
+    }
 
-    reverse(arr, 6);
+    cout <<endl<<endl;
 
-    printArray(arr, 6);
+    reverse (arr, n);
 
-    cout <<endl;
-
+    printArray (arr, n);
+    
+    return 0;
 }
