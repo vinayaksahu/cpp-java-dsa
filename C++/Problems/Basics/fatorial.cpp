@@ -1,15 +1,27 @@
 #include<iostream>
 using namespace std;
-    
+
 int main() {
-        
-        int num, fact = 1;
+    
+    int n = -5, fact = 1;
 
-        cin >> num;
+    //cin >> n;
 
-        for (int i = 1; i <= num; i++) {
+    if (n < 0) {
+
+        cout << "A -ve number does not have factorial." << endl;
+    }
+    else {
+
+        for (int i = 1; i <= n; i++) {
             fact *= i;
         }
-        cout <<fact;
 
+        cout << "Factorial: " << fact << endl;
+    }
+
+    
+    
+
+    return 0;
 }
