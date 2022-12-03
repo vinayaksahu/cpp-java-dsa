@@ -5,7 +5,7 @@ int main() {
 
     int factorial(int);  
       
-    int fact, value = -5;  
+    int fact, value = 0;  
 
     fact = factorial(value);   
 
@@ -14,13 +14,21 @@ int main() {
     return 0;    
 }    
     
-int factorial(int n) {
+int factorial(int n) 
+{
 
-    if(n<0)    
+    int fact = 1;
+
+    if (n < 0)    
         return -1; /*Wrong value*/      
-    if(n==0)    
+    if (n == 0)    
         return 1;  /*Terminating condition*/    
     else {    
-        return(n*factorial(n-1));        
+        //return n * factorial (n - 1);        
+
+        for (int i = 1; i <= n; i++) {
+            fact *= i;
+        }
+        return fact;     
     }    
 }  
