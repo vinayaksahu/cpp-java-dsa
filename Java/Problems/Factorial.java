@@ -3,25 +3,25 @@ import java.util.Scanner;
 /**
  * FactorialNumber
  */
-public class FactorialNumber {
+public class Factorial {
 
     static int factorial(int n) {
 
         //int fact = 1;
 
-        if (n < 0) {
+        /*if (n < 0) {
             return -1;
         }
         else if (n == 0) {
             return 1;
         }
-        else {
+        else {*/
 /*
 *           for (int i = 1; i <= n; i++) {
 *              fact = fact  * i;
 *         }
-*/         return n * factorial (n -1);  
-        }
+*/         return (n < 0) ? -1 : (n == 0) ? 1 : n * factorial (n - 1);  
+        //}
         // return fact;
         
     }
@@ -32,7 +32,7 @@ public class FactorialNumber {
 
         int value = input.nextInt();
         
-        int fact = factorial(value);
+        int fact = factorial(value); 
 
         System.out.println(fact);
 

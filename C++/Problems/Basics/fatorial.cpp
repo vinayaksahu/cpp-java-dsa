@@ -1,36 +1,18 @@
-#include<iostream>    
-using namespace std;  
+#include <iostream>
+using namespace std;
 
-int main() {   
+int factorial (int n) {
 
-    int factorial(int);  
-      
-    int fact, value = 5;  
+  return (n < 0) ? -1 : (n == 0) ? 1 : n * factorial (n - 1);
+}
 
-    fact = factorial(value);   
+int main () {
+  
+  int n = 4;
 
-    cout<<"Factorial of a number is: "<<fact<<endl;    
-
-    return 0;    
-}    
-    
-int factorial(int n) 
-{
-
-    //int fact = 1;
-
-    // if (n < 0)    
-    //     return -1; /*Wrong value*/      
-    // else if (n == 0)    
-    //      return 1;  /*Terminating condition*/    
-    // else {    
-    //     return n * factorial (n - 1);    
-
-    return (n == 0) ? 1 : n * factorial (n - 1);        
-
-        // for (int i = 1; i <= n; i++) {
-        //     fact *= i;
-        // }
-        //return fact;     
-  //  }    
-}  
+  int fact = factorial (n);
+  
+  cout << "factorial of " <<n << " is: " << fact << endl; 
+  
+  return 0;
+}
