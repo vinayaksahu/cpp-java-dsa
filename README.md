@@ -1,3 +1,6 @@
+# Homework for today	
+##         Factorial of a number
+
 # Following topics are covered in Java and CPP	
 ##         Introduction
               Hello World 
