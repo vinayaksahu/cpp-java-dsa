@@ -71,15 +71,14 @@ int main() {
         cout << ar1[i] <<" ";
     } cout << endl << endl;
 
-    //empty()
-
+    //empty or not
     array<int, 0> ar2;
     cout << "Empty or not: ";
     ar2.empty() 
         ? cout << "(Empty)" << endl << endl
         : cout << "(Not empty)" << endl << endl;
 
-    //fill() 
+    //// fill the array with 1 six times
     array<int, 6> ar3;
     ar3.fill(1);
     cout <<"Array after filling operation" << endl;
