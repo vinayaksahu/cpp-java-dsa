@@ -52,7 +52,12 @@
 
 
 ##         Arrays
-              Arrays
+              1D Arrays
+              
+              2D Arrays
+
+##         String
+              All about Char Arrays, Strings
 
 ##         Theory only
               Binary search
