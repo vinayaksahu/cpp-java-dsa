@@ -1,5 +1,16 @@
-# Homework for today	
-##         Factorial of a number
+## Recently Covered Topics	
+
+              Selection Sort
+
+              Bubble Sort
+
+              Insertion Sort
+  
+              The C++ Standard Template Library (STL)
+
+
+
+
 
 # Following topics are covered in Java and CPP	
 ##         Introduction
