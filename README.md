@@ -8,8 +8,17 @@
   
               The C++ Standard Template Library (STL)
 
+              2D Array, String, Char
 
+              Sieve of Eratosthenes
 
+              Euclid’s Algo
+
+              LCM and GCD
+
+              Modulo Arithmetics
+
+              Introduction of Pointer
 
 
 # Following topics are covered in Java and CPP	
