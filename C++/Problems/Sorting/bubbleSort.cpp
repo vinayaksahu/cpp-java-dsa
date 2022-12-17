@@ -4,7 +4,7 @@ using namespace std;
 
 int bubbleSort(int arr[], int n) {
 
-    int i, j;
+    //int i, j;
 
     for (int i = 1; i < n-1; i++) {
         bool swapped = false;
