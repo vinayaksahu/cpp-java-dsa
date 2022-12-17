@@ -1,7 +1,8 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
-void selectionSort(int arr[], int n)
+void selectionSort(vector<int> v, int n)
 {
 	int i, j, min_idx, temp;
 
@@ -11,35 +12,32 @@ void selectionSort(int arr[], int n)
 		// Find the minimum element in unsorted array
 		min_idx = i;
 		for (j = i+1; j < n; j++)
-		if (arr[j] < arr[min_idx])
-			min_idx = j;
+			if (v[j] < v[min_idx])
+				min_idx = j;
 
 		// Swap the found minimum element with the first element 
 		if(min_idx != i)
-			swap(arr[min_idx], arr[i]);
-        /*    temp = arr[min_idx];
-            arr[min_idx] = arr[i];
-	        arr[i] = temp;*/
+			swap(v[min_idx], v[i]);
 	}
 }
 
-//Function to print an array
-void printArray(int arr[], int size)
+//Function to print the data
+void print(vector<int> v, int size)
 {
 	int i;
 	for (i=0; i < size; i++)
-		cout << arr[i] << " ";
+		cout << v[i] << " ";
 	cout << endl;
 }
 
-// Main Fuction
+// Main Function
 int main()
 {
-	int arr[] = {64, 25, 12, 22, 11};
-	int n = sizeof(arr) / sizeof(arr[0]);
-	selectionSort(arr, n);
+	vector<int> v = {64, 25, 12, 22, 11};
+	int n = v.size();
+	selectionSort(v, n);
 	cout << "Sorted array: " << endl;
-	printArray(arr, n);
+	print(v, n);
 	return 0;
 }
  
