@@ -10,13 +10,7 @@
 
               2D Array, String, Char
 
-              Sieve of Eratosthenes
-
-              Euclid’s Algo
-
-              LCM and GCD
-
-              Modulo Arithmetics
+              Basic Maths for DSA
 
               Introduction of Pointer
 
