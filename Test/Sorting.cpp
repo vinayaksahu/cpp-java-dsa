@@ -4,25 +4,25 @@ using namespace std;
 
 void selectionSort(int ar[], int n) {
 
-    for (int i = 0; i < n-1; i++) {
-        int mi = i;
-        for (int j = i+1; j < n; j++) {
-            if (ar[j] < ar[mi]) {
-                mi = j;
-            }
+for (int i = 0; i < n-1; i++) {
+    int mi = i; //Find minimum element in unsorted array
+    //traversing if element is minimum than min_idx found then swap both the values
+    for (int j = i+1; j < n; j++) {
+        if (ar[j] < ar[mi]) {
+            mi = j;
         }
-        //swap
-        if (mi != i)
-            swap(ar[i], ar[mi]);
-    }
-    
+    } //swap the found element
+    if (mi != i) {
+        swap(ar[i], ar[mi]);
+    }    
+}
 
 }
 
 void insertionSort(int ar[], int n) {
     int i, j, key;
-    for (i = 0; i < n; i++) {
-        key = ar[i];
+    for (i = 1; i < n; i++) {
+        key = i;
         for (j = i-1; j >=0 ; j--) {
             if (ar[j] > key)
                 ar[j+1] = ar[j];
@@ -43,10 +43,15 @@ void bubbleSort(int ar[], int n) {
                 swap(ar[j], ar[j+1]);
                 swapped = true;
             }
+            
         }
-        if (swapped == false)
+        if (swapped == false) {
             break;
+        }
+        
+        
     }
+    
 }
 
 void print(int ar[], int n) {
