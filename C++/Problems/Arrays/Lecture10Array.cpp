@@ -11,8 +11,14 @@ void reverseArray (int ar[], int n) {
         start ++;
         end --;
     }
-    
+}
 
+void swapAlternate (int ar[], int n) {
+
+    for (int i = 0; i < n; i+=2) {
+        swap (ar[i], ar[i+1]);
+    }
+    
 }
 
 void printArray (int ar[], int n) {
@@ -24,11 +30,14 @@ void printArray (int ar[], int n) {
 
 int main() {
     
-    int arr[] = {7, 4, 8, 5, 6, 3, 2, 1, 9};
+    int arr[] = {1, 2, 3, 4, 5, 6};
 
     int size = sizeof(arr) / sizeof(arr[0]);;
 
-    reverseArray (arr, size);
+    //reverseArray (arr, size);
+    //printArray (arr, size);
+
+    swapAlternate (arr, size);
     printArray (arr, size);
 
     return 0;
