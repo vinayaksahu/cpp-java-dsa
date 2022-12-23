@@ -16,6 +16,7 @@ void reverseArray (int ar[], int n) {
 void swapAlternate (int ar[], int n) {
 
     for (int i = 0; i < n; i+=2) {
+        if (i+1 < n)
         swap (ar[i], ar[i+1]);
     }
     
