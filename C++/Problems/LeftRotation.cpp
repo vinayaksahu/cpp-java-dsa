@@ -1,4 +1,3 @@
-// C++ implementation of the approach
 #include <iostream>
 #include <vector>
 using namespace std;
