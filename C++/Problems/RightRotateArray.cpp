@@ -2,7 +2,7 @@
 
 using namespace std;
 
-const int N = 10;  // size of the array
+const int N = 5;  // size of the array
 
 // Function to perform right rotation on the array
 void rotateRight(int a[], int n)
@@ -19,10 +19,15 @@ void rotateRight(int a[], int n)
 
 int main()
 {
-    int a[N] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+    int a[N] = { 1, 2, 3, 4, 5};
+    int k = 2;
 
     // perform right rotation on the array
-    rotateRight(a, N);
+    for (int i = 0; i < k; i++) {
+        rotateRight(a, N);
+    }
+    
+    
 
     // print the rotated array
     for (int i = 0; i < N; i++)
