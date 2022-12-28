@@ -5,11 +5,11 @@ int check_prime(int);
 
 int main() {
 
-  int n1, n2;
+  int n1 = 2, n2 = 20;
   bool flag;
 
-  cout << "Enter two positive integers: ";
-  cin >> n1 >> n2;
+  //cout << "Enter two positive integers: ";
+  //cin >> n1 >> n2;
 
   // swapping n1 and n2 if n1 is greater than n2
   if (n1 > n2) {
@@ -19,7 +19,7 @@ int main() {
   }
 
   cout << "Prime numbers between " << n1 << " and " << n2 << " are:\n";
-
+  int count = 0;
   for(int i = n1+1; i < n2; ++i) {
     // if i is a prime number, flag will be equal to 1
     flag = check_prime(i);
