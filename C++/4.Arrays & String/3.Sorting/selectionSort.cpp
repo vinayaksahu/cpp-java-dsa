@@ -8,9 +8,8 @@ void selectionSort (int a[], int n) {
         for (int j = i+1; j < n; j++)
             if (a[min] > a[j])
                 min = j;
-        swap(a[min], a[i]);
+        swap (a[min], a[i]);
     }
-    
 }
 
 void printArray(int a[], int n) {
@@ -22,7 +21,7 @@ void printArray(int a[], int n) {
 
 int main() {
     
-    int arr[] = {1, 5, 4, 2, 6, 3, 9, 7, 4, 5, 2};
+    int arr[] = {5, 4, 2, 6, 3, 9, 7, 4, 5, 2};
 
     int size = sizeof(arr) / sizeof (arr[0]);
 
