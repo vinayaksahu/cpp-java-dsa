@@ -2,19 +2,17 @@
 using namespace std;
 
 void min (int a[], int n) {
-    int i = 0, min = i;
-    for (i = 0; i < n; i++)
-        if (a[min] > a[i])
-            a[min] = a[i];
-    cout << "Min: " << a[min] << endl;
+    for (int i = 0; i < n; i++)
+        if (a[0] > a[i])
+            a[0] = a[i];
+    cout << "Min: " << a[0] << endl;
 }
 
 void max (int a[], int n) {
-    int i = 0, max = i;
-    for (i = 0; i < n; i++)
-        if (a[max] < a[i])
-            a[max] = a[i];
-    cout << "Max: " << a[max] << endl;
+    for (int i = 0; i < n; i++)
+        if (a[0] < a[i])
+            a[0] = a[i];
+    cout << "Max: " << a[0] << endl;
 }
 
 void printArray(int a[], int n) {
