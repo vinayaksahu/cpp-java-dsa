@@ -8,16 +8,16 @@ void swap (int *xp, int *yp) {
 }
 
 void bubbleSort (int a[], int n) {
-    bool swapped = false;
+
     for (int i = 0; i < n-1; i++) {
+        bool swapped = false;
         for (int j = 0; j < n-i-1; j++) {
-            if (a[j] > a[j+1]) {
-                swap(a[j], a[j+1]);
+            if (a[j] > a[j+1])
+                swap (a[j], a[j+1]);
                 swapped = true;
-            }
-        }        
+        }   
         if (swapped == false)
-        break;  
+            break;
     }
 }
 
@@ -30,7 +30,7 @@ void printArray(int a[], int n) {
 
 int main() {
     
-    int arr[] = {5, 4, 2, 6, 3, 9, 7, 4, 5, 2};
+    int arr[] = {5, 4, 2, 6, 3, 9, 7};
 
     int size = sizeof(arr) / sizeof (arr[0]);
 

@@ -9,15 +9,7 @@ void swap (int *xp, int *yp) {
 
 void selectionSort (int a[], int n) {
 
-    for (int i = 0; i < n-1; i++) {
-        //find minimum element
-        int min = i;
-        for (int j = i+1; j < n; j++)
-            if (a[min] > a[j])
-                min = j;
-        //swap the found minimum element with the first element
-        swap (&a[min], &a[i]);
-    }
+
 }
 
 //print sorted array element
