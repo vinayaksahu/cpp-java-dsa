@@ -8,8 +8,15 @@ void swap (int *xp, int *yp) {
 }
 
 void selectionSort (int a[], int n) {
-
-
+    for (int i = 0; i < n-1; i++) {
+        //Find minimum element
+        int min = i;
+        for (int j = i+1; j < n; j++)
+            if (a[j] < a[min])
+                min = j;
+        //swap
+        swap (&a[min], &a[i]);
+    }    
 }
 
 //print sorted array element
@@ -21,7 +28,7 @@ void printArray(int a[], int n) {
 
 int main() {
     
-    int arr[] = {5, 4, 2, 6, 3, 9, 7, 4, 5, 2};
+    int arr[] = {5, 4, 2, 6, 3, 9, 7};
 
     int size = sizeof(arr) / sizeof (arr[0]);
 
