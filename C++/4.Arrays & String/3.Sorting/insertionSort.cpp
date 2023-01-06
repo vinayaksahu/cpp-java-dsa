@@ -1,20 +1,16 @@
 #include <iostream>
 using namespace std;
 
-void insertionSort (int arr[], int n) {
-  for (int i = 1; i < n; ++i) {
-    int temp = arr[i];
-    int j;
+void insertionSort (int a[], int n) {
 
-    // Shift all elements that are greater than the key to the right by one position
-    for (j = i-1; j >= 0; j--) {
-        if (arr[j] > temp)
-            arr[j+1] = arr[j];
+    for (int i = 1; i < n; i++) {
+        int j, temp = a[i];
+        for (j = i-1; j >= 0; j--) {
+            if (a[j] > temp)
+                a[j+1] = a[j];
+        }
+        a[j+1] = temp;
     }
-
-    // Insert the key in its correct position
-    arr[j+1] = temp;
-  }
 }
 
 //print sorted array element
