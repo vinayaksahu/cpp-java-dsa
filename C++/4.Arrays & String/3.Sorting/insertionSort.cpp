@@ -4,14 +4,13 @@ using namespace std;
 void insertionSort (int a[], int n) {
 
     for (int i = 1; i < n; i++) {
-        int j, temp = a[i];
-        for (j = i-1; j >= 0; j--) {
-            if (a[j] > temp)
-                a[j+1] = a[j];
-            else
-                break;    
-        }
-        a[j+1] = temp;   
+        int key = a[i];
+        int j = i-1;
+        while (j >= 0 && a[j] > key) {
+            a[j+1] = a[j];
+            j = j-1;            
+        }    
+        a[j+1] = key;
     }
 }
 
