@@ -2,18 +2,19 @@
 using namespace std;
 
 //swap function
-void swap (int *xp, int *yp) {
+/* void swap (int *xp, int *yp) {
     int temp = *xp;
     *xp = *yp;
     *yp = temp;
-}
+} */
 
-void ReverseArray (int a[], int n) {
+//Reverse array
+void ReverseArray (char *a, int n) {
     int s = 0;
     int e = n-1;
-    while (s <= e) {
+    while (s <= e) { //till start = end
         //swap start and end element
-        swap (&a[s], &a[e]);
+        swap (a[s], a[e]);
         s++; //increment start
         e--; //decrement end
     }
@@ -21,7 +22,7 @@ void ReverseArray (int a[], int n) {
 }
 
 //print sorted array element
-void printArray(int a[], int n) {
+void printArray(char *a, int n) {
     for (int i = 0; i < n; i++) {
         cout << a[i] << " ";
     } cout << endl;    
@@ -29,13 +30,12 @@ void printArray(int a[], int n) {
 
 int main() {
     
-    int arr[] = {5, 4, 2, 6, 3, 9, 7};
+    char str[] = "abcd";
+    int size = sizeof(str) / sizeof (str[0]);
 
-    int size = sizeof(arr) / sizeof (arr[0]);
-
-    cout <<"Reverse Array: "<<endl;
-    ReverseArray (arr, size);
-    printArray(arr, size);
+    cout <<"Reverse String: "<<endl;
+    ReverseArray (str, size);
+    printArray(str, size);
 
     return 0;
 }
