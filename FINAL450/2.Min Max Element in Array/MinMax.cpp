@@ -1,21 +1,22 @@
 #include <iostream>
 using namespace std;
 
-void MinMax(int arr[] , int n) {
+void MinMax(int a[] , int n) {
 
-   int max = arr[0], min = arr[0]; 
-
-   for(int i = 1; i < n; i++) {
-      if(max < arr[i])
-         max = arr[i];
-      if(min > arr[i])
-         min = arr[i];
+   int min = a[0];
+   int max = a[0];
+   for (int i = 0; i < n; i++) {
+      if (min > a[i])
+         min = a[i];
+      
+      if (max < a[i])
+         max = a[i];
    }
-   cout <<"Maximum Value = "<<max<<"\n";
-   cout <<"Minimum Value = "<<min;
+   cout << "Minimum value: " << min << endl;   
+   cout << "Maximum value: " << max << endl;   
 }
 
-int main(){
+int main() {
 
    int arr[] = {2, 1, 6, 9, 4, 10, 15, 21};
    int size = sizeof(arr) / sizeof (arr[0]);
