@@ -13,13 +13,13 @@ void bubbleSort (int a[], int n) {
         bool swapped = false;
         for (int j = 0; j < n-i-1; j++) {
             if (a[j] > a[j+1]) {
-                swap (a[j], a[j+1]);
+                swap (&a[j], &a[j+1]);
                 swapped = true;
             }
         }
         if (swapped == false)
             break;
-    }        
+    }   
 }
 
 //print sorted array element
