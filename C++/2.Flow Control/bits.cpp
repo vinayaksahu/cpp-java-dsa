@@ -10,4 +10,4 @@ int main () {
     cout << bit;
 
     return 0;
-}
+}   
