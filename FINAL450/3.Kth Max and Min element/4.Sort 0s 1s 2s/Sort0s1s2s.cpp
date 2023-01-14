@@ -12,7 +12,7 @@ void sort012(int a[], int arr_size)
 
 	// Iterate till all the elements
 	// are sorted
-	while (mid <= hi) {
+	while (mid <= hi) {   
 		switch (a[mid]) {
 
 		// If the element is 0
