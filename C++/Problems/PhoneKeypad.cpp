@@ -1,3 +1,7 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
 class Solution {
 public:
     void solve(int ind, string &ds, vector<string> &ans, string mapping[], string digits){
