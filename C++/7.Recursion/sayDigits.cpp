@@ -14,6 +14,7 @@ void sayDigit (int n, string arr[]) {
     //head recursion
     sayDigit (n, arr);
     cout << arr[digit] << " ";
+
 }
 
 int main() {
