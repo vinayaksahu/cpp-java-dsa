@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int linearSearch(int arr[], int size, int key) {
+bool linearSearch(int arr[], int size, int key) {
 
     //base case
     if (size == 0)
@@ -24,7 +24,7 @@ int main() {
 
     int size = 5;
 
-    int key = 40;
+    int key = 4;
 
     bool ans = linearSearch(arr, size, key);
 
