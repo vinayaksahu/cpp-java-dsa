@@ -1,7 +1,17 @@
 #include <iostream>
 using namespace std;
 
+void print (int *arr, int size, int key) {
+
+    for (int i = 0; i < size; i++) {
+        cout << arr[i] << " ";
+    } cout <<": & size = "<< size <<" & key = "<< key << endl;
+    
+}
+
 bool linearSearch(int arr[], int size, int key) {
+
+    print (arr, size, key);
 
     //base case
     if (size == 0)
@@ -24,7 +34,7 @@ int main() {
 
     int size = 5;
 
-    int key = 4;
+    int key = 3;
 
     bool ans = linearSearch(arr, size, key);
 
