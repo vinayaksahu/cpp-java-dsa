@@ -1,47 +1,82 @@
-#include<iostream>
-#include<vector>
+// C++ program for Merge Sort
+#include <iostream>
 using namespace std;
 
-void merge(int arr1[], int n, int arr2[], int m, int arr3[]) {
+void merge(int arr[], int s, int mid, int  e)
+{
+	int arr1Len = mid - s + 1; //array 1 (left) array length
+	int arr2Len = e - mid; //array 2 (right) array length
 
-    int i = 0, j = 0;
-    int k = 0;
-    while( i<n && j<m) {
-        if(arr1[i] < arr2[j]){
-            arr3[k++] = arr1[i++];
-        }
-        else{
-            arr3[k++] = arr2[j++];
-        }
-    }
+	// Create temp arrays
+	int *arr1 = new int[arr1Len];
+	int	*arr2 = new int[arr2Len];
 
-    while(i<n) {
-        arr3[k++] = arr1[i++];
-    }
+	// Copy data to temp arrays leftArray[] and rightArray[]
+	for (int i = 0; i < arr1Len; i++)
+		arr1[i] = arr[s + i];
+	for (int j = 0; j < arr2Len; j++)
+		arr2[j] = arr[mid + 1 + j];
 
-    while(j<m) {
-        arr2[k++] = arr2[j++];
-    }
+	int i = 0; // Initial index of first sub-array
+	int j = 0; // Initial index of second sub-array
+	int k = s; // Initial index of merged array
+
+	// Merge the temp arrays back into array[left..right]
+	while (i < arr1Len && j < arr2Len) {
+		if (arr1[i] <= arr2[j]) {
+			arr[k] = arr1[i];
+			i++;
+		}
+		else {
+			arr[k] = arr2[j];
+			j++;
+		}
+		k++;
+	}
+	// Copy the remaining elements of left[], if there are any
+	while (i < arr1Len) {
+		arr[k] = arr1[i];
+		i++;
+		k++;
+	}
+	// Copy the remaining elements of right[], if there are any
+	while (j < arr2Len) {
+		arr[k] = arr2[j];
+		j++;
+		k++;
+	}
+	delete[] arr1;
+	delete[] arr2;
 }
 
-void print(int ans[], int n) {
-    for(int i=0; i<n; i++) {
-        cout<< ans[i] <<" ";
-    }
-    cout << endl;
+void mergeSort(int arr[], int s, int e)
+{   //base case
+	if (s >= e)
+		return; //Returns recursively
+
+	int mid = s + (e - s) / 2;
+	mergeSort(arr, s, mid);  //RC. - sort left part
+	mergeSort(arr, mid + 1, e); //RC. - sort right part
+	merge(arr, s, mid, e); //merge 
 }
 
-int main() {
+// print the array
+void printArray(int arr[], int n) {
+	for (auto i = 0; i < n; i++)
+		cout << arr[i] << " ";
+}
 
-    int arr1[5] = {1,3,5,7,9};
-    int arr2[3] = {2,4,6};
+int main()
+{
+	int arr[] = { 12, 11, 13, 5, 6, 7 };
+	int size = sizeof(arr) / sizeof(arr[0]);
 
-    int arr3[8] = {0};
+	cout << "Given array is " << endl;
+	printArray(arr, size);
 
-    merge(arr1, 5, arr2, 3, arr3);
+	mergeSort(arr, 0, size - 1);
 
-    print(arr3, 8);
-
-
-    return 0;
+	cout << "\nSorted array is " << endl;
+	printArray(arr, size);
+	return 0;
 }

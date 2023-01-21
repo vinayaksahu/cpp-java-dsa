@@ -11,37 +11,40 @@ void merge(int *arr, int s, int e) {
     int len2 = e - mid; //right part array lenght
 
     //create 2 new array in heap memory
-    int *first = new int[len1];
-    int *second = new int[len2];
+    int *arr1 = new int[len1];
+    int *arr2 = new int[len2];
 
     //copy values at those arrays
-    int k = s;
-    for (int i = 0; i < len1; i++)
-        first[i] = arr[k++];
+    for (int i = 0; i < len1; i++) {
+        int k = s;
+        arr1[i] = arr[k++];
+    }
 
-    int k = mid + 1;
-    for (int i = 0; i < len2; i++)
-        second[i] = arr[k++];
+    for (int i = 0; i < len2; i++) {
+        int k = mid + 1;
+        arr2[i] = arr[k++];
+    }
 
     //merge 2 sorted
     int index1 = 0;        
     int index2 = 0;
 
-    k = s;
+    int k = s;
     while (index1 < len1 && index2 < len2) {
-        if (first[index1] < second[index2])
-            arr[k++] = first[index1++];
+        if (arr1[index1] < arr2[index2])
+            arr[k++] = arr1[index1++];
         else
-            arr[k++] = second[index2++];
+            arr[k++] = arr2[index2++];
     }
-
+    // traverse the arr1 and insert its element in mainArray
     while(index1 < len1)
-        arr[k++] = first[index1++];
+        arr[k++] = arr1[index1++];
+    // now traverse arr2 and insert in mainArray
     while(index2 < len2)
-        arr[k++] = second[index2++];
+        arr[k++] = arr2[index2++];
     
-    delete []first;
-    delete []second;
+    delete []arr1;
+    delete []arr2;
 }
 
 void mergeSort(int *arr, int s, int e) {
@@ -82,6 +85,12 @@ int power(int a, int b) {
     
 }
 
+// print the array
+void printArray(int arr[], int n) {
+	for (auto i = 0; i < n; i++)
+		cout << arr[i] << " ";
+}
+
 int main() {
 
     int arr[] = {2, 5, 1, 6, 9};
@@ -89,9 +98,7 @@ int main() {
 
     mergeSort(arr, 0, n-1);
 
-    for(int i = 0; i < n; i++)
-        cout << arr[i] << " ";
+    printArray(arr, n);
 
     return 0;
-
 }
