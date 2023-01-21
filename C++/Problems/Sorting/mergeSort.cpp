@@ -17,11 +17,10 @@ void merge(int arr[], int s, int mid, int  e)
 	for (int j = 0; j < arr2Len; j++)
 		arr2[j] = arr[mid + 1 + j];
 
+	// Merge the temp arrays back into main array[left..right]
 	int i = 0; // Initial index of first sub-array
 	int j = 0; // Initial index of second sub-array
 	int k = s; // Initial index of merged array
-
-	// Merge the temp arrays back into array[left..right]
 	while (i < arr1Len && j < arr2Len) {
 		if (arr1[i] <= arr2[j]) {
 			arr[k] = arr1[i];
