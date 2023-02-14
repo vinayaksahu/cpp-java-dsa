@@ -3,29 +3,17 @@ using namespace std;
 
 int main() {
 
-    int row = 10;
-    int col = 15;
+    int n = 10;
     
-    for (int i = 0; i < row; i+=1) {
-        if (i == 0 || i == row-1) {
-            for (int j = 0; j < col; j+=1) {
+    for (int i = 0; i < n; i+=1) {
+        for (int j = 0; j < n; j++) {
+            if (i == 0 || i == n-1 || j == 0 || j == n-1)
                 cout << "* ";
-            }
-        }
-        else
-        {
-            cout << "* ";
-            for (int j = 0; j < col-2; j++) {
+            else
                 cout << "  ";
-            }
-            
-            cout << "* ";
         }
-        
-        
         cout << endl;
     }
-    
 
     return 0;
 }
