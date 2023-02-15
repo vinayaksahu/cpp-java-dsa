@@ -1,18 +1,19 @@
-## Recently Covered Topics	
+## Recent Running Topic	
 
-              Selection Sort
+            Star/Alphabet-Numeric(Palidrome/Floyd/Pascal)
+        	Rectangle-Solid/Hollow
+	        Pyramid(Triangle)-L/R/F(N/E/O)/Flip-I/H
+	        Diamond-L/R/F/Flip-H 
+            and some fancy Patterns
 
-              Bubble Sort
-
-              Insertion Sort
-  
-              The C++ Standard Template Library (STL)
-
-              2D Array, String, Char
-
-              Basic Maths for DSA
-
-              Introduction of Pointer
+*L-Left
+*R-Right
+*F-Full
+*N-Natural
+*E-Even
+*O-Odd
+*I-Inverse
+*H-Hollow
 
 
 # Following topics are covered in Java and CPP	
