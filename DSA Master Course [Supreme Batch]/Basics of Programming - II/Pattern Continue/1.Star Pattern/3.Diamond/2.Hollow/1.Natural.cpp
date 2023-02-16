@@ -11,7 +11,10 @@ int main() {
             cout << " ";
         }
         for (int j = 0; j < i+1; j++) {
-            cout << "* ";
+            if (j == 0 || j == i)
+                cout << "* ";
+            else
+                 cout << "  ";
         } cout << endl;    
     }
         //Lower
@@ -21,7 +24,10 @@ int main() {
             cout << " ";
         }
         for (int j = 0; j < n-i-1; j++) {
-            cout << "* ";
+            if (j == 0 || j == n-i-2)
+                cout << "* ";
+            else
+                cout << "  ";
         } cout << endl;    
     }
     
@@ -32,11 +38,11 @@ int main() {
 
     * 
    * * 
-  * * * 
- * * * * 
-* * * * * 
- * * * * 
-  * * * 
+  *   * 
+ *     * 
+*       * 
+ *     * 
+  *   * 
    * * 
     * 
 
